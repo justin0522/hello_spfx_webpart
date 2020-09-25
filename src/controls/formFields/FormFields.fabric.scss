@@ -1,0 +1,57 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.textField-cssStyled {
+  width: 500px;
+  margin-top: 15px;
+
+  .ms-TextField-fieldGroup {
+    width: 300px;
+  }
+
+  .ms-Label {
+    float: left;
+    width: 200px;
+  }
+}
+
+.noteField-cssStyled {
+  width: 500px;
+  margin-top: 15px;
+
+  .ms-TextField-fieldGroup {
+    width: 500px;
+  }
+
+  .ms-Label {
+    float: left;
+    width: 200px;
+  }
+}
+
+.numberField-cssStyled {
+    width: 500px;
+    margin-top: 15px;
+  
+    .ms-TextField-fieldGroup {
+      width: 500px;
+    }
+  
+    .ms-Label {
+      float: left;
+      width: 200px;
+    }
+  }
+
+.dateField-cssStyled {
+  width: 500px;
+  margin-top: 15px;
+
+  .ms-TextField-fieldGroup {
+    width: 300px;
+  }
+
+  .ms-Label {
+    float: left;
+    width: 200px;
+  }
+}

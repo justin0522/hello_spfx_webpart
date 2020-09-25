@@ -1,0 +1,16 @@
+// $errorTextColor: #a80000;
+// $ms-color-themePrimary: #0078d4;
+
+.textField-cssStyled {
+  .ms-Label {
+    float: left;
+    margin-right: 15px;
+    color: brown;
+  }
+
+  .ms-TextField-fieldGroup {
+    float: left;
+    //border-top-color: $errorTextColor;
+  }
+  
+}

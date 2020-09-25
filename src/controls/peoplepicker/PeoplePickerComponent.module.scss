@@ -1,0 +1,31 @@
+.defaultClass {
+  color: black;
+  //display: flex;
+  //width: 400px;
+  // .ms-Label {
+  //   width: 30%;
+  // }
+
+  // .ms-PeoplePicker {
+  //   width: 70%;
+  // }
+}
+
+.minClass {
+  width: 180px;
+}
+
+.errorMessage {
+  font-size: 12px;
+  font-weight: 400;
+  color: #a80000;
+  margin: 0;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.errorIcon {
+  font-size: 14px;
+  margin-right: 5px;
+}

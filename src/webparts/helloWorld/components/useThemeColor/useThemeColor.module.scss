@@ -1,0 +1,16 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.UseThemeColor {
+
+  .myButton1 {
+    background-color: #0078d7;
+  }
+
+  .myButton2 {
+    background-color: "[theme: themePrimary, default: #0078d7]";
+  }
+
+  .myButton3 {
+    background-color: "[theme: themeDark, default: #0078d7]";
+  }
+}

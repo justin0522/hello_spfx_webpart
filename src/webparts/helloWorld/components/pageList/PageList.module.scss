@@ -1,0 +1,41 @@
+//@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.grid {
+  @include ms-Grid
+}
+
+.row {
+  @include ms-Grid-row;
+  margin-top: 15px
+}
+
+.column2 {
+  @include ms-Grid-col;
+  @include ms-lg2;
+  @include ms-xl2;
+}
+
+.column4 {
+  @include ms-Grid-col;
+  @include ms-lg4;
+  @include ms-xl4;
+}
+
+.column5 {
+  @include ms-Grid-col;
+  @include ms-lg5;
+  @include ms-xl5;
+}
+
+.column6 {
+  @include ms-Grid-col;
+  @include ms-lg6;
+  @include ms-xl6;
+}
+
+.column10 {
+  @include ms-Grid-col;
+  @include ms-lg10;
+  @include ms-xl10;
+}

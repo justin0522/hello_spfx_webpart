@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{E1378378-406A-423D-894A-D1D26A6068D6}" Name="JustinText" DisplayName="Text" Type="Text" Required="FALSE" Group="SPFx Columns" />
+    <Field ID="{17CE9711-F5A8-4529-A06A-A0394732BAFE}" Name="JustinNumber" DisplayName="Number" Type="Number" Required="FALSE" Group="SPFx Columns" />
+    <Field ID="{BD42DB5A-7AEB-477D-9013-CA6F389CBBAE}" Name="JustinNote" DisplayName="Note" Type="Note" Required="FALSE" Group="SPFx Columns" />
+    <Field ID="{B4B5C287-0EE9-4546-96B3-B65EBB5E7179}" Name="JustinDateTime" DisplayName="DateTime" Type="DateTime" Required="FALSE" Group="SPFx Columns" />
+    <Field ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" Name="JustinCurrency" DisplayName="Currency" Type="Currency" Decimals="2" Min="0" Required="FALSE" Group="SPFx Columns" />
+    <Field ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" Name="JustinChoice" DisplayName="Choice" Type="Choice" Required="FALSE" Group="SPFx Columns">
+        <CHOICES>
+            <CHOICE>Administration</CHOICE>
+            <CHOICE>Information</CHOICE>
+            <CHOICE>Facilities</CHOICE>
+            <CHOICE>Operations</CHOICE>
+            <CHOICE>Sales</CHOICE>
+            <CHOICE>Marketing</CHOICE>
+        </CHOICES>
+    </Field>
+
+    <ContentType ID="0x010042D0C1C200A14B6887742B6344675C8B" Name="SPFx CT" Group="SPFx Content Types" Description="Sample content types from web part solution">
+        <FieldRefs>
+            <FieldRef ID="{E1378378-406A-423D-894A-D1D26A6068D6}" />
+            <FieldRef ID="{17CE9711-F5A8-4529-A06A-A0394732BAFE}" />
+            <FieldRef ID="{BD42DB5A-7AEB-477D-9013-CA6F389CBBAE}" />
+            <FieldRef ID="{B4B5C287-0EE9-4546-96B3-B65EBB5E7179}" />
+            <FieldRef ID="{060E50AC-E9C1-4D3C-B1F9-DE0BCAC300F6}" />
+            <FieldRef ID="{943E7530-5E2B-4C02-8259-CCD93A9ECB18}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ContentType ID="0x0100df227252648649f5b34ef7282d48a36e" Name="Yokogawa Additional Fields" Group="SPFx Content Types" Description="Used to store additional fields.">
+        <FieldRefs>
+            <FieldRef ID="{FA564E0F-0C70-4AB9-B863-0177E6DDD247}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance CustomSchema="schema.xml" FeatureId="00bfea71-de22-43b2-a848-c05709900100" Title="SPFx List" Description="SPFx List" TemplateType="100" Url="Lists/SPFxList">
+        <Data>
+            <Rows>
+                <Row>
+                    <Field Name="Title">ID001</Field>
+                    <Field Name="JustinText">hello</Field>
+                    <Field Name="JustinNumber">123</Field>
+                    <Field Name="JustinNote">abc</Field>
+                    <Field Name="JustinDateTime">05/04/2012</Field>
+                    <Field Name="JustinCurrency">7</Field>
+                </Row>
+            </Rows>
+        </Data>
+    </ListInstance>
+
+</Elements>
